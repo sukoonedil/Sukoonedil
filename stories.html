@@ -6,7 +6,7 @@
 <style>
 body{background:black;color:white;font-family:Arial;padding:20px;text-align:center;}
 .story{background:#111;padding:20px;border-radius:20px;margin:20px;}
-.like{cursor:pointer;color:pink;font-size:20px;}
+.like{cursor:pointer;color:pink;font-size:22px;}
 </style>
 </head>
 <body>
@@ -15,17 +15,27 @@ body{background:black;color:white;font-family:Arial;padding:20px;text-align:cent
 
 <div class="story">
 <p>Mai toot kar bhi bachi rahi…</p>
-<div class="like" onclick="likeStory(this,1)">❤️ 0</div>
+<div id="like1" class="like" onclick="likeStory(1)">❤️ 0</div>
 </div>
 
 <script>
-function likeStory(btn,id){
+
+function loadLikes(){
+let count = localStorage.getItem("like1");
+if(!count){ count = 0; }
+document.getElementById("like1").innerHTML="❤️ "+count;
+}
+
+function likeStory(id){
 let count = localStorage.getItem("like"+id);
 if(!count){ count=0; }
 count++;
 localStorage.setItem("like"+id,count);
-btn.innerHTML="❤️ "+count;
+document.getElementById("like"+id).innerHTML="❤️ "+count;
 }
+
+loadLikes();
+
 </script>
 
 </body>
