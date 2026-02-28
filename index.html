@@ -7,10 +7,18 @@
 
 <style>
 
+@keyframes bgMove {
+0% { background-position: 0% 50%; }
+50% { background-position: 100% 50%; }
+100% { background-position: 0% 50%; }
+}
+
 body{
 margin:0;
-font-family: 'Poppins', sans-serif;
-background: radial-gradient(circle at top, #2b001f, #000000);
+font-family:Poppins, sans-serif;
+background: linear-gradient(-45deg,#000000,#2b001f,#000000,#33001a);
+background-size:400% 400%;
+animation:bgMove 15s ease infinite;
 color:white;
 text-align:center;
 }
@@ -26,7 +34,7 @@ box-shadow:0 0 40px #ff4da6;
 .badge{
 margin:25px auto;
 background:linear-gradient(45deg,#ff4da6,#ff80bf);
-padding:15px 25px;
+padding:15px;
 width:80%;
 border-radius:50px;
 font-weight:bold;
@@ -44,7 +52,6 @@ box-shadow:0 0 30px #ff0066;
 
 .box h2{
 color:#ff80bf;
-margin-bottom:15px;
 }
 
 .btn{
@@ -57,19 +64,17 @@ text-decoration:none;
 font-weight:bold;
 font-size:18px;
 color:white;
+transition:0.3s;
 }
 
-.whatsapp{
-background:#25D366;
+.btn:hover{
+transform:scale(1.05);
+box-shadow:0 0 20px #ff4da6;
 }
 
-.anonymous{
-background:linear-gradient(45deg,#ff4da6,#ff80bf);
-}
-
-.stories{
-background:linear-gradient(45deg,#9933ff,#ff66cc);
-}
+.whatsapp{ background:#25D366; }
+.anonymous{ background:linear-gradient(45deg,#ff4da6,#ff80bf); }
+.stories{ background:linear-gradient(45deg,#9933ff,#ff66cc); }
 
 footer{
 margin:40px 0;
@@ -105,9 +110,11 @@ text-decoration:none;
 <a href="https://wa.me/8318805057" class="btn whatsapp">
 WhatsApp Support
 </a>
+
 <a href="mailto:tanharoo010@gmail.com" class="btn anonymous">
 📧 Email Support
 </a>
+
 <a href="chat.html" class="btn anonymous">
 Anonymous Chat
 </a>
