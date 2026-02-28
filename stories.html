@@ -4,9 +4,28 @@
 <title>Stories</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body{background:black;color:white;font-family:Arial;padding:20px;text-align:center;}
-.story{background:#111;padding:20px;border-radius:20px;margin:20px;}
-.like{cursor:pointer;color:pink;font-size:22px;}
+body{
+background:black;
+color:white;
+font-family:Arial;
+padding:20px;
+text-align:center;
+}
+
+.story{
+background:#111;
+padding:25px;
+border-radius:20px;
+margin:20px;
+box-shadow:0 0 20px rgba(255,0,100,0.4);
+}
+
+.like{
+cursor:pointer;
+color:pink;
+font-size:22px;
+margin-top:10px;
+}
 </style>
 </head>
 <body>
@@ -18,12 +37,24 @@ body{background:black;color:white;font-family:Arial;padding:20px;text-align:cent
 <div id="like1" class="like" onclick="likeStory(1)">❤️ 0</div>
 </div>
 
+<div class="story">
+<p>Usne dhokha diya, par maine khud ko nahi chhoda…</p>
+<div id="like2" class="like" onclick="likeStory(2)">❤️ 0</div>
+</div>
+
+<div class="story">
+<p>Raat bhar royi, subah phir muskura di…</p>
+<div id="like3" class="like" onclick="likeStory(3)">❤️ 0</div>
+</div>
+
 <script>
 
 function loadLikes(){
-let count = localStorage.getItem("like1");
+for(let i=1;i<=3;i++){
+let count = localStorage.getItem("like"+i);
 if(!count){ count = 0; }
-document.getElementById("like1").innerHTML="❤️ "+count;
+document.getElementById("like"+i).innerHTML="❤️ "+count;
+}
 }
 
 function likeStory(id){
