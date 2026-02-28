@@ -5,36 +5,114 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sukoon e Dil</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
 <style>
-body{margin:0;font-family:Arial;background:#ffeef5;text-align:center}
-header{background:#ff4fa3;color:white;padding:25px;font-size:26px;font-weight:bold}
-.box{background:white;margin:20px;padding:20px;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,.1)}
-.btn{display:block;margin:15px;padding:15px;background:#ff4fa3;color:white;border-radius:10px;text-decoration:none;font-size:18px}
-</style>
-</head>
+body{
+font-family:'Poppins',sans-serif;
+margin:0;
+background:linear-gradient(135deg,#ffe6f2,#ffd6eb,#fff0f7);
+background-size:400% 400%;
+animation:bgmove 12s ease infinite;
+}
 
-<body>
+@keyframes bgmove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
 
-<header>🌸 Sukoon e Dil<br><small> </small></header> <div style="text-align:center;margin-top:10px;">
-<span style="
-background:linear-gradient(45deg,#ff4fa3,#ff85c1);
+header{
+background:linear-gradient(90deg,#ff4fa3,#ff8acb);
+padding:25px;
+text-align:center;
+box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+header img{
+height:60px;
+}
+
+.badge{
+text-align:center;
+margin:20px;
+padding:12px;
+background:linear-gradient(90deg,#ff6bb5,#ff9bd4);
 color:white;
-padding:8px 18px;
-border-radius:25px;
-font-weight:bold;
-display:inline-block;
-animation:pulse 1.5s infinite;">
-❤️ Only for Ladies ❤️
-</span>
-</div>
+border-radius:30px;
+font-weight:600;
+box-shadow:0 5px 15px rgba(255,105,180,0.3);
+}
 
-<style>
-@keyframes pulse{
-0%{transform:scale(1);}
-50%{transform:scale(1.07);}
-100%{transform:scale(1);}
+.box{
+background:rgba(255,255,255,0.7);
+backdrop-filter:blur(12px);
+margin:25px;
+padding:30px;
+border-radius:25px;
+box-shadow:0 10px 25px rgba(255,105,180,0.2);
+}
+
+h2{
+color:#ff4fa3;
+}
+
+p{
+color:#444;
+line-height:1.6;
+}
+
+.btn{
+display:block;
+margin:15px auto;
+padding:15px;
+width:80%;
+text-align:center;
+border-radius:30px;
+background:linear-gradient(90deg,#ff4fa3,#ff8acb);
+color:white;
+font-weight:600;
+text-decoration:none;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:white;
+margin-top:30px;
+}
+
+footer a{
+color:#ff4fa3;
+font-weight:bold;
+text-decoration:none;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50%;
+font-size:22px;
+text-decoration:none;
 }
 </style>
+
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+
+</head>
+<body>
+
+<header>
+<img src="logo.svg">
+</header>
+
+<div class="badge">
+❤️ Only for Ladies ❤️
+</div>
 
 <div class="box">
 <h2>💔 Dil ki baat bina dare</h2>
@@ -46,41 +124,22 @@ animation:pulse 1.5s infinite;">
 <p>Baat karein, share karein — hum sunenge.</p>
 </div>
 
-<a class="btn" href="https://wa.me/918318805057">WhatsApp Support</a>
+<a class="btn" href="https://wa.me/918318805721">WhatsApp Support</a>
 <a class="btn" href="mailto:tanharoo010@gmail.com">Email Support</a>
-<a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdHLqLi6NL373wpEy212uxWOg6sO9Mot9bCa6WnTDoLLHIY_A/viewform">Anonymous Form</a>
-  <a class="btn" href="chat.html">Anonymous Chat</a>
+<a class="btn" href="chat.html">Anonymous Chat</a>
 <a class="btn" href="stories.html">Healing Stories</a>
-<!-- Floating WhatsApp -->
-<a href="https://wa.me/918318805057"
-style="position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:15px;border-radius:50%;font-size:22px;text-decoration:none;z-index:1000;">
-💬
-</a>
-
-<div class="box">
-<h2>🌷 Daily Motivation</h2>
-<p>Tum akeli nahi ho. Har dard temporary hota hai.</p>
-</div>
-
-<div class="box">
-<h2>🌿 Healing Tips</h2>
-<p>Deep breathing • Walk • Kisi se baat • Phone kam use</p>
-</div>
 
 <div class="box">
 <h2>🆘 Emergency Help</h2>
-<p>Women Helpline: 1091<br>
-Mental Health Helpline: 9152987821</p>
+<p>Women Helpline: 1091<br>Mental Health Helpline: 9152987821</p>
 </div>
 
-<div class="box">
-<h2>⭐ Premium Support</h2>
-<p>Private talk aur personal guidance future me available hoga.</p>
-</div>
- <div style="text-align:center;margin-top:30px;padding:15px;">
-<a href="privacy.html" style="color:#ff4fa3;text-decoration:none;font-weight:bold;">
-Privacy Policy
-</a>
- </div> 
+<footer>
+© 2026 Sukoon e Dil <br><br>
+<a href="privacy.html">Privacy Policy</a>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/918318805721">💬</a>
+
 </body>
 </html>
