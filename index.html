@@ -3,155 +3,144 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Sukoon e Dil</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
+
 body{
-font-family:'Poppins',sans-serif;
-margin:0;
-background:linear-gradient(135deg,#ffe6f2,#ffd6eb,#fff0f7);
-background-size:400% 400%;
-animation:bgmove 12s ease infinite;
-}
-
-@keyframes bgmove{
-0%{background-position:0% 50%;}
-50%{background-position:100% 50%;}
-100%{background-position:0% 50%;}
-}
-
-header{
-background:linear-gradient(90deg,#ff4fa3,#ff8acb);
-padding:25px;
-text-align:center;
-box-shadow:0 4px 15px rgba(0,0,0,0.1);
-} header h1{
   margin:0;
+  font-family:'Poppins', sans-serif;
+  background:black;
   color:white;
-  font-size:32px;
-  font-weight:700;
-  letter-spacing:1px;
+  text-align:center;
 }
 
-header img{
-height:60px;
+/* Logo Section */
+header{
+  padding:40px 20px 10px 20px;
 }
 
+.logo-img{
+  width:300px;
+  max-width:90%;
+  animation: glow 3s infinite alternate;
+}
+
+@keyframes glow{
+  from{
+    filter: drop-shadow(0 0 5px #ff4da6);
+  }
+  to{
+    filter: drop-shadow(0 0 20px #ff99cc);
+  }
+}
+
+/* Badge */
 .badge{
-text-align:center;
-margin:20px;
-padding:12px;
-background:linear-gradient(90deg,#ff6bb5,#ff9bd4);
-color:white;
-border-radius:30px;
-font-weight:600;
-box-shadow:0 5px 15px rgba(255,105,180,0.3);
+  display:inline-block;
+  margin:20px;
+  padding:12px 25px;
+  background:linear-gradient(45deg,#ff4da6,#ff80bf);
+  border-radius:30px;
+  font-weight:600;
+  box-shadow:0 5px 20px rgba(255,0,120,0.5);
 }
 
+/* Glass Card */
 .box{
-background:rgba(255,255,255,0.7);
-backdrop-filter:blur(12px);
-margin:25px;
-padding:30px;
-border-radius:25px;
-box-shadow:0 10px 25px rgba(255,105,180,0.2);
+  background:rgba(255,255,255,0.05);
+  margin:25px;
+  padding:30px;
+  border-radius:20px;
+  backdrop-filter:blur(10px);
+  box-shadow:0 10px 30px rgba(255,0,120,0.3);
 }
 
-h2{
-color:#ff4fa3;
+.box h2{
+  color:#ff99cc;
 }
 
-p{
-color:#444;
-line-height:1.6;
+.box p{
+  color:#ddd;
 }
 
+/* Buttons */
 .btn{
-display:block;
-margin:15px auto;
-padding:15px;
-width:80%;
-text-align:center;
-border-radius:30px;
-background:linear-gradient(90deg,#ff4fa3,#ff8acb);
-color:white;
-font-weight:600;
-text-decoration:none;
-}
-
-footer{
-text-align:center;
-padding:20px;
-background:white;
-margin-top:30px;
-}
-
-footer a{
-color:#ff4fa3;
-font-weight:bold;
-text-decoration:none;
+  display:block;
+  margin:15px auto;
+  padding:15px;
+  width:80%;
+  max-width:300px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:600;
+  transition:0.3s;
 }
 
 .whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px;
-border-radius:50%;
-font-size:22px;
-text-decoration:none;
+  background:#25D366;
+  color:white;
 }
+
+.anonymous{
+  background:linear-gradient(45deg,#ff4da6,#ff80bf);
+  color:white;
+}
+
+.btn:hover{
+  transform:scale(1.05);
+}
+
+/* Footer */
+footer{
+  margin-top:40px;
+  padding:20px;
+  font-size:14px;
+  color:#aaa;
+}
+
+footer a{
+  color:#ff80bf;
+  text-decoration:none;
+}
+
 </style>
-
-<link rel="icon" href="logo.svg" type="image/svg+xml">
-
 </head>
+
 <body>
 
 <header>
-  <h1>🌸 Sukoon e Dil</h1>
+  <!-- Yahan apni uploaded image ka naam likhna -->
+  <img src="logo.png" class="logo-img">
 </header>
 
-
-
-
-
-
-
 <div class="badge">
-❤️ Only for Ladies ❤️
+  ❤️ Only for Ladies ❤️
 </div>
 
 <div class="box">
-<h2>💔 Dil ki baat bina dare</h2>
-<p>Akelapan, dhokha ya stress — yahan aap akeli nahi hain.</p>
+  <h2>💔 Dil ki baat bina dare</h2>
+  <p>Akelapan, dhokha ya stress — yahan aap akeli nahi hain.</p>
 </div>
 
 <div class="box">
-<h2>🤍 Emotional Support</h2>
-<p>Baat karein, share karein — hum sunenge.</p>
+  <h2>💗 Emotional Support</h2>
+  <p>Baat karein, share karein — hum sunenge.</p>
 </div>
 
-<a class="btn" href="https://wa.me/918318805721">WhatsApp Support</a>
-<a class="btn" href="mailto:tanharoo010@gmail.com">Email Support</a>
-<a class="btn" href="chat.html">Anonymous Chat</a>
-<a class="btn" href="stories.html">Healing Stories</a>
+<a href="https://wa.me/8318805057" class="btn whatsapp">WhatsApp Support</a>
 
-<div class="box">
-<h2>🆘 Emergency Help</h2>
-<p>Women Helpline: 1091<br>Mental Health Helpline: 9152987821</p>
-</div>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSdHLqLi6NL373wpEy212uxWOg6sO9Mot9bCa6WnTDoLLHIY_A/viewform" class="btn anonymous">
+Anonymous Chat
+</a>
 
 <footer>
-© 2026 Sukoon e Dil <br><br>
-<a href="privacy.html">Privacy Policy</a>
+  © 2026 Sukoon e Dil <br>
+  <a href="#">Privacy Policy</a>
 </footer>
-
-<a class="whatsapp" href="https://wa.me/918318805721">💬</a>
 
 </body>
 </html>
